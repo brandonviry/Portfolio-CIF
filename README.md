@@ -24,4 +24,4 @@ Ce projetr est mon portfolio des mes projet en formation CIF
 
 ## Deploiment vecel
 
-lien direct:
+lien direct:[https://portfolio-cif.vercel.app/](https://portfolio-cif.vercel.app/)
