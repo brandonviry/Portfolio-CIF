@@ -12,11 +12,13 @@ Ce projetr est mon portfolio des mes projet en formation CIF
 
 - feat :no-found
 
-- feat:error
+- feat:error 
+
+- feat: ajout des projet 1-7
 
 - feat : attent -> loading
 
-- feat: attente -> ajout des projet 1-5
+
 
 - feat: attente -> site responsive 
 

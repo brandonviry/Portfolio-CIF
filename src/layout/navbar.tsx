@@ -33,12 +33,17 @@ export default function navbar() {
             <CarouselItem key={index}>
               <a href={val.url}>
                 <Card
-                  style={{
+                  style={(val.img != "")?{
                     backgroundImage: `url(${val.img})`,
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
                     height:"20vh",
                     width:"20vw"
+                  }:{
+
+                    height:"20vh",
+                    width:"20vw"
+                   
                   }}
                 >
                   <CardHeader className="h-full">
