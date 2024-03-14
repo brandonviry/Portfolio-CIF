@@ -7,7 +7,10 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Portfolio CIF | VIRY Brandon ",
   description: "Cette application web rassemble les projets fait lors de la formation CIF",
+
 };
+
+
 
 export default function RootLayout({
   children,
@@ -16,6 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+      <link rel="icon" href="https://i.ibb.co/yg9ZgwB/Logo-Porfolio.png" type="image/png" />
+      </head>
       <body className={inter.className+" bg-teal-600"}>{children} 
        
       
