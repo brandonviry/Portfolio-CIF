@@ -47,7 +47,7 @@ export default function navbar() {
                   }}
                 >
                   <CardHeader className="h-full">
-                    <CardTitle className="text-neutral-100 bg-neutral-900 w-full h-full p-3 opacity-1 hover:opacity-0">Projet {index+1}</CardTitle>
+                    <CardTitle className="text-neutral-100 bg-neutral-900 w-full h-full p-3 opacity-1 hover:opacity-0">{val.name}</CardTitle>
                   </CardHeader>
                 </Card>
               </a>
