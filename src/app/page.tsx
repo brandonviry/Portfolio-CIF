@@ -6,7 +6,7 @@ import Bienvenue from "@/layout/bienvenue";
 import Presentation from "@/layout/presentation";
 import Navbar from "@/layout/navbar";
 import Contact from "@/layout/contact";
-
+import Contactform from "@/layout/contactform";
 export default function Home() {
 
 
@@ -17,6 +17,8 @@ export default function Home() {
       <Presentation></Presentation>
       <Navbar></Navbar>
       <Contact></Contact>
+      <Contactform></Contactform>
+      
       
        
       
