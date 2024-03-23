@@ -1,0 +1,22 @@
+.display-none{
+    display:none;
+}
+
+
+.presentation-titre{
+    margin-left: 5vw;
+  
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.presentation-desc{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.presentation-zimage{
+    width: 30vw;
+}

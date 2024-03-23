@@ -1,63 +1,46 @@
 import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-  } from "@/components/ui/card";
-  import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-  } from "@/components/ui/carousel";
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import Image from 'next/image';
 import projet from "@/data/projet.json";
 export default function navbar() {
-    const p = projet.projet;
+  const p = projet.projet;
   return (
     <section
-    className={
-      "bg-sky-500  w-full flex flex-row justify-center items-center"
-    }
-    style={{ height: "30vh" }}
-    id="navbar"
-  >
-
-    
-    <Carousel className=" h-full" style={{ width: "75%" }}>
-      <CarouselContent  style={{ width: "100%", height: "100%" , marginTop:"5vh"}}>
-        {p.map((val, index) => {
-          return (
-            <CarouselItem key={index}>
-              <a href={val.url}>
-                <Card
-                  style={(val.img != "")?{
-                    backgroundImage: `url(${val.img})`,
-                    backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat",
-                    height:"20vh",
-                    width:"20vw"
-                  }:{
-
-                    height:"20vh",
-                    width:"20vw"
-                   
-                  }}
-                >
-                  <CardHeader className="h-full">
-                    <CardTitle className="text-neutral-100 bg-neutral-900 w-full h-full p-3 opacity-1 hover:opacity-0">{val.name}</CardTitle>
-                  </CardHeader>
-                </Card>
-              </a>
-            </CarouselItem>
-          );
-        })}
-      </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
-    </Carousel>
-  </section>
-  )
+      className={
+        "bg-sky-900  w-full flex flex-row justify-center items-center flex-wrap  p-3"
+      }
+      id="navbar"
+    >
+      {
+      p.map((val, index) => {
+        return (
+          <a href={val.url} key={index} className="m-1" style ={{width:"20rem",height:"20rem"}} >
+            <Card className="p-0 bg-neutral-900"
+            >
+              <CardContent className="p-0 border border-0  rounded ">
+                <Image src={val.img} alt={val.name} width={1280}  height={720} className="border border-0  rounded"
+                 />
+              </CardContent>
+              <CardHeader className="h-full">
+              <CardTitle className="text-neutral-100  p-0 scroll-m-20 text-2xl font-extrabold tracking-tight ">
+                  {val.name ? val.name : "Projet n-"+index}
+                </CardTitle>
+                 <CardDescription className="text-neutral-100">{val.desc ? val.desc : "-"}</CardDescription> 
+                 
+                
+              </CardHeader>
+            </Card>
+          </a>
+        );
+      })
+      
+      }
+    </section>
+  );
 }
