@@ -1,29 +1,31 @@
-# Porfolio
+
+
+# Portfolio
 
 ## Description
 
-Ce projetr est mon portfolio des mes projet en formation CIF 
+Ce projet est un portfolio présentant les projets réalisés durant ma formation CIF. Il met en avant mes compétences en développement web et permet de visualiser divers travaux réalisés au cours de la formation.
 
+## Langages Utilisés
 
+- **TypeScript**: Langage utilisé pour ajouter des types statiques et améliorer la robustesse du code.
+- **HTML**: Langage de balisage pour structurer le contenu des pages.
+- **CSS**: Langage de style pour la présentation et le design des pages.
 
-## LOG
+## Technologies Utilisées
 
-- feat : Developpment page accuille (! bar de navigation de projet )
+- **Framework**: Next.js (version 14.1.3)
+- **CSS Framework**: Tailwind CSS (version 3.3.0) 
+- **Composants UI**:
+  - FontAwesome (version 6.6.0) pour les icônes
+  - ShadCN UI pour les composants d'interface utilisateur (UI)
+  - Lucide React pour les icônes supplémentaires (version 0.350.0)
+- **Client Notion**: @notionhq/client (version 2.2.15)
 
-- feat :no-found
+## Déploiement
 
-- feat:error 
+- **Lien Direct**: [Portfolio en ligne](https://portfolio-cif.vercel.app/)
 
-- feat: ajout des projet 1-7
+## Licence
 
-- feat : attent -> loading
-
-
-
-- feat: attente -> site responsive 
-
-- feat: attente -> documentation
-
-## Deploiment vecel
-
-lien direct:[https://portfolio-cif.vercel.app/](https://portfolio-cif.vercel.app/)
+Aucune licence spécifique n'a été définie pour ce projet. 
