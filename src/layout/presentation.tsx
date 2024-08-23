@@ -1,52 +1,44 @@
-import Image from 'next/image'
-import"./css/presentation.css"
-export default function presentation() {
+import Image from "next/image";
+
+export default function Presentation() {
   return (
     <section
-    className={
-      "bg-sky-900 lg:h-screen w-full flex flex-rows justify-center items-center "
-    }
-    id="presentation"
-  >
-    <article className={"bg-yellow-500 lg:w-3/4 lg:h-3/4 flex lg:flex-rows max-lg:flex-col  "}>
-      <div className={"bg-sky-900 lg:w-3/4  h-full max-lg:w-full"}>
-        <h1
-          className={"text-left  font-bold text-neutral-100 presentation-titre font-bold scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-6xl"}
-    
-        >
-          Bonjour ! je m&#39;appelle VIRY Brandon{" "}
+      id="presentation"
+      className="bg-[#191919] flex justify-center items-center  w-full h-screen"
+    >
+      
+      <article className="bg-[#191919] grid grid-cols-1 lg:grid-cols-3 gap-8 p-6 lg:p-12">
+     
+      <div className="flex justify-center items-center">
+        <div className="w-64 h-64 lg:w-80 lg:h-80 relative">
+          <Image
+            src="https://i.ibb.co/ZJ8gpQw/Banniere-Porfolio.png"
+            alt="Bannière Portfolio"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-md"
+            priority
+          />
+        </div>
+      </div>
+
+  
+      <div className="lg:col-span-2 flex flex-col justify-center lg:mx-10">
+        <h1 className="text-3xl lg:text-5xl font-extrabold text-neutral-100 mb-6">
+          Bonjour, je suis Viry Brandon
         </h1>
-        <p
-          className={"text-justify text-2xl text-sky-500 presentation-desc leading-7 [&:not(:first-child)]:mt-6 p-0"}
-         
-        >
-          Aspirant développeur web , je suis à la recherche d&#39;opportunités
-          professionnelles pour appliquer mes compétences naissantes et
-          développer mon savoir-faire dans le domaine du développement web.
-          Motivé, adaptable et prêt à apprendre, je suis ouvert aux stages
-          et aux opportunités d&#39;emploi pour contribuer à des projets
-          concrets tout en affinant mes compétences techniques. Mon objectif
-          ultime est de m&#39;épanouir en tant que développeur web compétent au
-          sein d&#39;une équipe dynamique.
+        <p className="text-lg lg:text-xl text-sky-500 leading-relaxed">
+          Je suis un aspirant développeur web. Ce portfolio vous présente les projets
+          réalisés durant ma formation CIF, ainsi que mes compétences en
+          développement web 🌐💻. Actuellement à la recherche de
+          nouvelles opportunités professionnelles pour appliquer et
+          approfondir mes connaissances 🚀🔍, je suis motivé et déterminé 💪 à
+          intégrer une équipe dynamique où je pourrai continuer à évoluer 🌱 et
+          contribuer à des projets innovants 💡🤝.
         </p>
       </div>
-      <div
-        className={
-          "bg-sky-900  flex flex-col justify-center items-center lg:w-1/4 w-full     lg:presentation-zimage"
-        }
-     
-      >
-    
-      <Image
-      layout="responsive"  
-      width={380}
-  height={532}
-  src="https://i.ibb.co/ZJ8gpQw/Banniere-Porfolio.png"
-  alt="Banniere Porfolio" 
-/>
-
-      </div>
     </article>
-  </section>
-  )
+
+    </section>
+  );
 }
