@@ -20,7 +20,15 @@ Ce projet est un portfolio présentant les projets réalisés durant ma formatio
   - FontAwesome (version 6.6.0) pour les icônes
   - ShadCN UI pour les composants d'interface utilisateur (UI)
   - Lucide React pour les icônes supplémentaires (version 0.350.0)
-- **Client Notion**: @notionhq/client (version 2.2.15)
+
+## Gestion des projets
+
+Les projets affichés dans la galerie sont définis dans `src/data/projects.json`.
+Chaque projet doit contenir les cinq champs texte suivants : `id`, `name`, `img`,
+`url` et `desc`. L'identifiant `id` doit être unique.
+
+Pour gérer la galerie, ajoutez, modifiez ou supprimez directement les objets du
+tableau JSON. Leur ordre dans le tableau correspond à leur ordre d'affichage.
 
 ## Déploiement
 

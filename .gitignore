@@ -26,7 +26,14 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
+.env
 .env*.local
+
+# local branding working documents
+branding-template*.xml
+
+# private project generation guide
+/docs/project-thumbnail-generation.md
 
 # vercel
 .vercel

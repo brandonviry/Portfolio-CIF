@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Monogramme BV de Brandon VIRY</title>
+  <rect width="64" height="64" rx="8" fill="#191919" />
+  <rect x="1" y="1" width="62" height="62" rx="7" fill="none" stroke="#0EA5E9" stroke-opacity="0.5" stroke-width="2" />
+  <path d="M8 48H56M12 42H52M16 36H48" fill="none" stroke="#7C3AED" stroke-opacity="0.28" stroke-width="1" />
+  <text x="10" y="40" fill="#F5F5F5" font-family="Chakra Petch, sans-serif" font-size="30" font-weight="700">B</text>
+  <text x="33" y="40" fill="#0EA5E9" font-family="Chakra Petch, sans-serif" font-size="30" font-weight="700">V</text>
+</svg>

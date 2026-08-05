@@ -18,7 +18,24 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["var(--font-sans)", "sans-serif"],
+        display: ["var(--font-display)", "sans-serif"],
+      },
       colors: {
+        brand: {
+          bg: "var(--color-bg)",
+          surface: "var(--color-bg-card)",
+          accent: "var(--color-accent)",
+          text: "var(--color-text)",
+          hero: "var(--color-text-hero)",
+          "nav-hover": "var(--color-nav-hover)",
+          muted: "var(--color-text-muted)",
+          link: "var(--color-link-hover)",
+          border: "var(--color-border)",
+          violet: "var(--color-brand-violet)",
+          magenta: "var(--color-brand-magenta)",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

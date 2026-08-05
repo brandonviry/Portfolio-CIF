@@ -1,30 +1,80 @@
-import { Inter } from "next/font/google";
+import { Chakra_Petch, Inter } from "next/font/google";
+import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/layout/header";
 import Footer from "@/layout/footer";
 
 
 
-const inter = Inter({ subsets: ["latin"] });
+const chakraPetch = Chakra_Petch({
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  variable: "--font-display",
+  display: "swap",
+});
 
-export const metadata = {
-  title: "Portfolio CIF | VIRY Brandon",
-  description: "Cette application web rassemble les projets faits lors de la formation CIF",
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-sans",
+  display: "swap",
+});
+
+const siteUrl = "https://portfolio-cif.vercel.app";
+const siteDescription =
+  "Portfolio de Brandon VIRY présentant les projets réalisés pendant sa formation CIF et les compétences transversales développées au fil du parcours.";
+
+export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Portfolio CIF | Brandon VIRY",
+    template: "%s | Portfolio CIF",
+  },
+  description: siteDescription,
+  applicationName: "Portfolio CIF",
+  authors: [{ name: "Brandon VIRY" }],
+  creator: "Brandon VIRY",
+  publisher: "Brandon VIRY",
+  keywords: [
+    "Portfolio CIF",
+    "Brandon VIRY",
+    "formation CIF",
+    "projets",
+    "compétences transversales",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  icons: {
+    icon: [{ url: "/assets/brand/favicon-bv.svg", type: "image/svg+xml" }],
+    shortcut: "/assets/brand/favicon-bv.svg",
+  },
   openGraph: {
-    type: 'website',
-    locale: 'fr_FR',
-    title: 'Portfolio CIF | VIRY Brandon',
-    description: 'Découvrez les projets réalisés lors de la formation CIF par Brandon VIRY.',
+    type: "website",
+    locale: "fr_FR",
+    url: "/",
+    siteName: "Portfolio CIF | Brandon VIRY",
+    title: "Portfolio CIF | Brandon VIRY",
+    description: siteDescription,
     images: [
       {
-        url: 'https://i.ibb.co/yg9ZgwB/Logo-Porfolio.png',
-        width: 800,
-        height: 600,
-        alt: 'Logo Portfolio',
+        url: "/assets/brand/open-graph-portfolio.png",
+        width: 1728,
+        height: 910,
+        alt: "Portfolio CIF de Brandon VIRY — Un parcours CIF, projet après projet",
       },
     ],
   },
- 
+  twitter: {
+    card: "summary_large_image",
+    title: "Portfolio CIF | Brandon VIRY",
+    description: siteDescription,
+    images: ["/assets/brand/open-graph-portfolio.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 export default function RootLayout({
   children,
@@ -37,10 +87,10 @@ export default function RootLayout({
       
       </head>
 
-      <body className={inter.className}>
+      <body className={`${inter.variable} ${chakraPetch.variable} font-sans`}>
      
         <Header />
-        <main className="bg-sky-900">
+        <main className="bg-brand-bg">
           {children}
         </main>
         <Footer />
